@@ -1,5 +1,6 @@
 import { MoveRight } from 'lucide-react'
 import React from 'react'
+import Plans from './Plans'
 
 const index = () => {
     return (
@@ -7,6 +8,8 @@ const index = () => {
             <div className='max-w-[1200px] mx-auto pt-[130px] relative z-10'>
                 <Header />
                 <Cards />
+                <Plans />
+                <div className='h-[200px] bg-black'></div>
             </div>
 
             <div className='h-[400px] w-[300px] rounded-full bg-[color:var(--green)] blur-[180px] shadow-2xl absolute -right-[100px] top-[20vh]'></div>
