@@ -6,6 +6,7 @@ import {
 } from "react-router-dom"
 import Home from './pages/Home'
 import Search from './pages/Search'
+import Landing from './pages/Landing'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/search' element={<Search />} />
+        <Route path='/landing' element={<Landing />} />
       </Routes>
     </BrowserRouter>
   )

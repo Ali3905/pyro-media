@@ -19,7 +19,7 @@ const index = () => {
 
 const Header = () => {
     return (
-        <div className=''>
+        <div>
             <h1 className='text-[color:var(--light-green)] font-semibold text-[64px] text-center'>Ai Search</h1>
             <h2 className='text-white text-[40px] font-medium text-center'>Find top right  influencer for your brand </h2>
             <div className='mt-[55px] border-2 border-[color:var(--dark-green)] flex p-2 pl-[40px] rounded-xl'>
