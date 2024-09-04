@@ -24,9 +24,6 @@ const InstaCollabValueEstimate = () => {
       <div className='flex flex-col gap-[20px] items-center mt-[20px]'>
 
         {Object.keys(collabEstimate).map((key) => {
-          {
-            console.log(collabEstimate[key].label);
-          }
           return <Card text={collabEstimate[key].label} data={collabEstimate[key]?.value?.toString() || `$${collabEstimate[key].low} - $${collabEstimate[key].high}`} />
         })}
       </div>

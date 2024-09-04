@@ -1,14 +1,14 @@
 import { Bell, Heart, Search } from 'lucide-react'
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({ url, onChange }) => {
   return (
     <nav className='flex justify-between items-center'>
       <h1 className='font-bold text-[32px] text-[color:var(--dark-green)]'>Overview</h1>
       <div className='flex items-center gap-[25px] bg-white rounded-full p-[10px]'>
         <span className='flex items-center gap-2 p-[10px] py-[11px] px-[20px] rounded-full bg-[color:var(--light-grey)]'>
           <Search size={16} />
-          <input type="search" placeholder='Search Influencer' className='outline-none bg-transparent placeholder:text-[color:var(--grey)]' />
+          <input type="search" placeholder='Search Influencer' className='outline-none bg-transparent placeholder:text-[color:var(--grey)]' onChange={onChange} url={url} />
         </span>
         <span className='flex gap-[10px]'>
           <Heart size={20} className='cursor-pointer' color='#A3D0A5' />
