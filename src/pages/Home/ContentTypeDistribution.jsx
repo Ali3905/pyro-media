@@ -40,9 +40,9 @@ export const Heading = ({ text }) => {
 
 export const Card = ({ title, data }) => {
     return (
-        <div className='bg-white px-[40px] py-[13px] rounded-xl text-center w-[150px] shadow-sm'>
-            <p className='font-medium text-[14px] text-[#86848B]'>{title}</p>
-            <p className='font-bold text-[24px]'>{data}%</p>
+        <div className='bg-[color:var(--dark-green)] px-[40px] py-[13px] rounded-xl text-center w-[150px] shadow-sm'>
+            <p className='font-medium text-[14px] text-white'>{title}</p>
+            <p className='font-bold text-[24px] text-white'>{data}%</p>
         </div>
     )
 }

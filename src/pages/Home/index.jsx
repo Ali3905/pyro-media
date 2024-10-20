@@ -2,14 +2,17 @@ import React, { useState } from 'react'
 import { Sidebar } from '../../components/Sidebar'
 import Navbar from '../../components/Navbar'
 import ProfileCard from './ProfileCard'
-import ContentTypeDistribution from './ContentTypeDistribution'
 import Audience from './Audience'
+import ContentTypeDistribution from './ContentTypeDistribution'
 import AudienceAuthenticity from './AudienceAuthenticity'
 import CollaborationAndValue from './CollaborationAndValue'
 import TopPosts from './TopPosts'
 import ContentAnalysis from './ContentAnalysis'
 import useFetchInstagramStatistics from '../../hooks/fetchInstagramStatictics'
 import { creatorData } from '../../data/data'
+import About from './About'
+import AudienceNewDesign from './AudienceNewDesign'
+import CollaborationCharges from './CollaborationCharges'
 
 const index = () => {
   const [url, setUrl] = useState(null)
@@ -27,12 +30,15 @@ const index = () => {
         {!creator || creator === undefined ? <div className='text-center mt-[60px] text-[22px]'>Creator is not available</div> :
           !isLoading ? <div className='mt-[60px] flex flex-col gap-[40px]'>
             <ProfileCard creator={creator} />
-            <ContentTypeDistribution />
+            <About />
+            <AudienceNewDesign />
+            <CollaborationCharges />
+            {/* <ContentTypeDistribution />
             <Audience creator={creator} />
             <AudienceAuthenticity creator={creator} />
             <CollaborationAndValue />
             <TopPosts />
-            <ContentAnalysis />
+            <ContentAnalysis /> */}
           </div> :
             <PageLoader />}
       </div>

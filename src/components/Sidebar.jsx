@@ -19,17 +19,13 @@ const NavLinksComponent = () => {
             link: "overview"
         },
         {
-            label: "Audience",
-            link: "audience"
+            label: "About",
+            link: "about"
         },
         {
-            label: "Collaboration and value",
-            link: "collab-and-value"
-        },
-        {
-            label: "Content Analysis",
-            link: "content-analysis"
-        },
+            label: "Collaboration Charges",
+            link: "collab-charges"
+        }
     ]
     return (
         <ul className='mt-[80px] flex flex-col gap-[16px]'>
