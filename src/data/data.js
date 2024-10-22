@@ -7,6 +7,14 @@ export const GenderAgeDistributionData = [
   ["above 50", 93, 7],
 ];
 
+export const ageDistributionData = [
+  {age: "11 to 18", value: 18},
+  {age: "18 to 25", value: 14},
+  {age: "25 to 35", value: 28},
+  {age: "35 to 50", value: 17},
+  {age: "above 50", value: 23},
+];
+
 export const GenderAgeDistributionOptions = {
   title: "Audience's age and gender distribution",
   // chartArea: { width: "50%" },
