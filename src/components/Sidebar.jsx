@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export const Sidebar = () => {
     return (
-        <div className='bg-white h-screen fixed left-0 w-[20vw] flex flex-col py-[42px]'>
+        <div className='bg-white h-screen fixed left-0 w-[20vw] sm:flex flex-col py-[42px] hidden'>
             <p className='px-[30px] font-semibold text-[24px]'>PyroMedia</p>
             <NavLinksComponent />
             <NotificationCard />

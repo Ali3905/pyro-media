@@ -25,7 +25,7 @@ const index = () => {
   return (
     <div className='flex w-full'>
       <Sidebar />
-      <div className='ml-[20vw] bg-[color:var(--light-grey)] w-full min-h-screen px-[30px] py-[30px]'>
+      <div className='sm:ml-[20vw] bg-[color:var(--light-grey)] w-full min-h-screen px-[30px] py-[30px]'>
         <Navbar onChange={onChange} url={url} />
         {!creator || creator === undefined ? <div className='text-center mt-[60px] text-[22px]'>Creator is not available</div> :
           !isLoading ? <div className='mt-[60px] flex flex-col gap-[40px]'>
