@@ -1,0 +1,129 @@
+{
+    "Name": "technical rahul",
+    "instagramData": {
+        "link": "https:\/\/instagram.com\/rahul__tiwari_00?igshid=NTc4MTIwNjQ2YQ==",
+        "genderDistribution": [
+            {
+                "gender": "MALE",
+                "distribution": 64
+            },
+            {
+                "gender": "FEMALE",
+                "distribution": 36
+            }
+        ],
+        "ageDistribution": [
+            {
+                "age": "11 to 18",
+                "value": 18
+            },
+            {
+                "age": "18 to 25",
+                "value": 14
+            },
+            {
+                "age": "25 to 35",
+                "value": 28
+            },
+            {
+                "age": "35 to 50",
+                "value": 17
+            },
+            {
+                "age": "above 50",
+                "value": 23
+            }
+        ],
+        "audienceByCountry": [
+            {
+                "category": "india",
+                "name": "India",
+                "value": 0.9142857142857143
+            },
+            {
+                "category": "saudi-arabia",
+                "name": "Саудовская Аравия",
+                "value": 0.02857142857142857
+            },
+            {
+                "category": "indonesia",
+                "name": "Indonesia",
+                "value": 0.02857142857142857
+            },
+            {
+                "category": "nepal",
+                "name": "Непал",
+                "value": 0.02857142857142857
+            }
+        ],
+        "collaborationCharges": {
+            "reel": 50,
+            "story": 50,
+            "post": 50,
+            "oneMonthDigitalRights": 50
+        }
+    },
+    "youtubeData": {
+        "link": "https:\/\/youtube.com\/@technicalrahul0?si=bkRW-Imtckc1QI04",
+        "genderDistribution": [
+            {
+                "gender": "MALE",
+                "distribution": 64
+            },
+            {
+                "gender": "FEMALE",
+                "distribution": 36
+            }
+        ],
+        "ageDistribution": [
+            {
+                "age": "11 to 18",
+                "value": 18
+            },
+            {
+                "age": "18 to 25",
+                "value": 14
+            },
+            {
+                "age": "25 to 35",
+                "value": 28
+            },
+            {
+                "age": "35 to 50",
+                "value": 17
+            },
+            {
+                "age": "above 50",
+                "value": 23
+            }
+        ],
+        "audienceByCountry": [
+            {
+                "category": "india",
+                "name": "India",
+                "value": 0.9142857142857143
+            },
+            {
+                "category": "saudi-arabia",
+                "name": "Саудовская Аравия",
+                "value": 0.02857142857142857
+            },
+            {
+                "category": "indonesia",
+                "name": "Indonesia",
+                "value": 0.02857142857142857
+            },
+            {
+                "category": "nepal",
+                "name": "Непал",
+                "value": 0.02857142857142857
+            }
+        ],
+        "collaborationCharges": {
+            "reel": 50,
+            "story": 50,
+            "post": 50,
+            "oneMonthDigitalRights": 50
+        }
+    }
+}
