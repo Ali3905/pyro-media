@@ -50,7 +50,7 @@ const Header = ({ handleSubmit, fetchingState }) => {
     return (
         <div>
             <h1 className='text-[color:var(--light-green)] font-semibold text-[64px] text-center'>Ai Search</h1>
-            <h2 className='text-white text-[40px] font-medium text-center'>Find top right  influencer for your brand </h2>
+            <h2 className='text-white text-[40px] font-medium text-center'>Find top right  influencer for your brand</h2>
             <div className='mt-[55px] border-2 border-[color:var(--dark-green)] flex p-2 pl-[40px] rounded-xl'>
                 <input onChange={(e) => setPrompt(e.target.value)} type="text" placeholder="Example: Find influencers who have followers around 50k and posts videos on Vlogs from delhi" className='outline-none bg-transparent border-none flex-grow py-2 text-white' />
                 <button className='bg-white px-6 py-2 rounded-md' onClick={() => handleSubmit(prompt)}>{fetchingState === "loading" ? "Finding" : "Find"}</button>
