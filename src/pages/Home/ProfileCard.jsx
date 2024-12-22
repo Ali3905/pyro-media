@@ -11,7 +11,7 @@ const ProfileCard = ({ creator }) => {
             <div className='flex justify-between items-start'>
                 {/* <div className='flex flex-col gap-[20px]'> */}
                 <img
-                    src="https://instagram.fisb31-1.fna.fbcdn.net/v/t51.2885-19/458302403_1034123448348400_1109701171157543177_n.jpg?..."
+                    src="https://instagram.fpnq4-1.fna.fbcdn.net/v/t51.2885-19/318204171_213856611049220_467295535015950048_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fpnq4-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=jsSfNlkv-KUQ7kNvgH3AsRG&_nc_gid=7b3189ae54d743fd82e058f28a592e9c&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AYD9MUd0ewGjml1J3OQKEhsqcwZ6ji677nuesVUKjUKzNA&oe=676E1AAD&_nc_sid=8b3546"
                     alt="profile"
                     height={150}
                     width={150}

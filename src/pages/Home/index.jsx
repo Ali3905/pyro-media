@@ -19,7 +19,9 @@ import axios from 'axios'
 const index = () => {
   const { userName } = useParams()
   const [url, setUrl] = useState(userName)
-  const { data: creator, isLoading } = useFetchInstagramStatistics(creatorData.data, url)
+  // const { data: creator, isLoading } = useFetchInstagramStatistics(creatorData.data, url)
+  const isLoading = false
+  const creator = creatorData.data
 
   const onChange = (e) => {
     setUrl(e.target.value)
