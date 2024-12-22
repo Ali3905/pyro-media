@@ -1,14 +1,16 @@
 import { ChartColumnIncreasing, Eye, Facebook, Heart, Instagram, ThumbsUp, Youtube } from 'lucide-react'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const InfluencerCard = ({ influencer }) => {
+    const navigate = useNavigate()
     return (
-        <div className='bg-white flex justify-between overflow-hidden rounded-md'>
+        <div className='bg-white flex justify-between overflow-hidden rounded-md cursor-pointer' onClick={()=>navigate(`/details/${influencer.name}`)}>
             <img src="/dummyAvatar1.jpg" alt="profile" className='w-[280px] aspect-square rounded-full relative -top-[50px] -left-[50px]' />
             <div className='mr-auto flex flex-col gap-[15px] self-center ml-[50px]'>
                 <p className='font-medium text-[24px] relative -left-[30px]'>{influencer?.name}</p>
                 <span className='flex items-center gap-[6px]'>
-                    <p className='mr-[10px]'>Type</p>
+                    <p className='mr-[10px]'>Type</p>   
                     <p className='p-1 text-[color:var(--dark-green)] border-2 border-[color:var(--dark-green)]'>{influencer?.categoryYouTube}</p>
                     <p className='p-1 text-[color:var(--dark-green)] border-2 border-[color:var(--dark-green)]'>{influencer?.categoryInstagram}</p>
                     {/* {

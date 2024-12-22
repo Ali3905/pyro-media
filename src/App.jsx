@@ -5,7 +5,6 @@ import {
   Route
 } from "react-router-dom"
 import Home from './pages/Home'
-import Search from './pages/Search'
 import Landing from './pages/Landing'
 
 function App() {
@@ -13,9 +12,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/search' element={<Search />} />
-        <Route path='/landing' element={<Landing />} />
+        <Route path='/' element={<Landing />} />
+        {/* <Route path='/search' element={<Search />} /> */}
+        <Route path='/details/:userName' element={<Home />} />
       </Routes>
     </BrowserRouter>
   )

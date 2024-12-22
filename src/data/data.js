@@ -197,358 +197,207 @@ export const influencers = [
 
 
 export const creatorData = {
-  "meta": {
-      "code": 200,
-      "message": "OK"
-  },
+  "success": true,
   "data": {
-      "cid": "INST:17841400926008111",
-      "socialType": "INST",
-      "groupID": "17841400926008111",
-      "url": "https://instagram.com/manojdey23",
-      "name": "Manoj Dey",
-      "image": "https://6f2859a7-8667-4b05-9978-a8922e29bf1f.selstorage.ru/INST:17841400926008111?time=1723006406",
-      "description": "Motivator | Influencer | Youtuber\n10 Million+ Fan Base Across All Social Media\nBusiness- manojdeybusiness@gmail.com\nChannel 👇",
-      "screenName": "manojdey23",
-      "usersCount": 1443997,
-      "communityStatus": "DONE",
-      "isBlocked": false,
-      "isClosed": false,
-      "verified": true,
-      "tags": [
-          "english",
-          "india",
-          "delhi",
-          "influencer",
-          "gender-m",
-          "age-27_30",
-          "hindi",
-          "age-21_24"
-      ],
-      "suggestedTags": [
-          "english",
-          "india",
-          "delhi",
-          "influencer",
-          "gender-m",
-          "age-27_30",
-          "hindi",
-          "age-21_24"
-      ],
-      "avgER": 0.14053235433912967,
-      "avgInteractions": 197506,
-      "avgViews": 0,
-      "ratingIndex": 1443997.8317491848,
-      "ratingTags": [
-          {
-              "tagID": "english",
-              "name": "English"
+      "instagramData": {
+          "collaborationCharges": {
+              "reel": 35000,
+              "story": 50000,
+              "post": 30000,
+              "oneMonthDigitalRights": 30000
           },
-          {
-              "tagID": "india",
-              "name": "India"
-          },
-          {
-              "tagID": "delhi",
-              "name": "Delhi"
-          },
-          {
-              "tagID": "influencer",
-              "name": "Influencer"
-          },
-          {
-              "tagID": "gender-m",
-              "name": "Male"
-          },
-          {
-              "tagID": "age-27_30",
-              "name": "27-30"
-          },
-          {
-              "tagID": "hindi",
-              "name": "Hindi"
-          },
-          {
-              "tagID": "age-21_24",
-              "name": "21-24"
-          }
-      ],
-      "similar": [
-          {
-              "cid": "INST:17841407620317135",
-              "image": "https://6f2859a7-8667-4b05-9978-a8922e29bf1f.selstorage.ru/INST:17841407620317135?time=1720726928",
-              "name": "Shayari | Quotes ✍️",
-              "usersCount": 371107
-          }
-      ],
-      "qualityScore": 0.7051597582037996,
-      "timeStatistics": "2024-08-07T04:53:26.090Z",
-      "timePostsLoaded": "2024-08-13T09:52:47.655Z",
-      "timeLongLoop": "2023-04-27T00:14:55.510Z",
-      "startDate": "2017-01-20T13:43:10.000Z",
-      "membersCities": [
-          {
-              "category": "jaipur",
-              "name": "Jaipur",
-              "value": 0.2
-          },
-          {
-              "category": "ludhiana",
-              "name": "Ludhiana",
-              "value": 0.2
-          },
-          {
-              "category": "delhi",
-              "name": "Delhi",
-              "value": 0.2
-          },
-          {
-              "category": "dehradun",
-              "name": "Dehradun",
-              "value": 0.2
-          },
-          {
-              "category": "mumbai",
-              "name": "Mumbai",
-              "value": 0.2
-          }
-      ],
-      "membersCountries": [
-          {
-              "category": "india",
-              "name": "India",
-              "value": 0.9142857142857143
-          },
-          {
-              "category": "saudi-arabia",
-              "name": "Саудовская Аравия",
-              "value": 0.02857142857142857
-          },
-          {
-              "category": "indonesia",
-              "name": "Indonesia",
-              "value": 0.02857142857142857
-          },
-          {
-              "category": "nepal",
-              "name": "Непал",
-              "value": 0.02857142857142857
-          }
-      ],
-      "membersGendersAges": {
-          "data": [
+          "followers": 0,
+          "link": "https://www.instagram.com/amishaasingh_",
+          "genderDistribution": [
               {
-                  "category": "0_18",
-                  "m": 0.26785714285714285,
-                  "f": 0.03571428571428571
+                  "_id": "67625b9261bd4323e284c1f5",
+                  "gender": "MALE",
+                  "distribution": 90.9
               },
               {
-                  "category": "18_21",
-                  "m": 0.19642857142857142,
-                  "f": 0.03571428571428571
-              },
-              {
-                  "category": "21_24",
-                  "m": 0.17857142857142858,
-                  "f": 0.03571428571428571
-              },
-              {
-                  "category": "24_27",
-                  "m": 0.05357142857142857,
-                  "f": 0
-              },
-              {
-                  "category": "27_30",
-                  "m": 0.05357142857142857,
-                  "f": 0
-              },
-              {
-                  "category": "30_35",
-                  "m": 0.07142857142857142,
-                  "f": 0.03571428571428571
-              },
-              {
-                  "category": "35_45",
-                  "m": 0,
-                  "f": 0
-              },
-              {
-                  "category": "45_100",
-                  "m": 0.017857142857142856,
-                  "f": 0.017857142857142856
+                  "_id": "67625b9261bd4323e284c1f6",
+                  "gender": "FEMALE",
+                  "distribution": 9
               }
           ],
-          "summary": {
-              "m": 0.8392857142857143,
-              "f": 0.16071428571428573,
-              "avgAges": "0_18"
-          }
+          "ageDistribution": [
+              {
+                  "_id": "67625b9261bd4323e284c1f7",
+                  "age": "13-17",
+                  "value": 5
+              },
+              {
+                  "_id": "67625b9261bd4323e284c1f8",
+                  "age": "18-24",
+                  "value": 56.4
+              },
+              {
+                  "_id": "67625b9261bd4323e284c1f9",
+                  "age": "25-34",
+                  "value": 32.1
+              },
+              {
+                  "_id": "67625b9261bd4323e284c1fa",
+                  "age": "35-44",
+                  "value": 3.9
+              },
+              {
+                  "_id": "67625b9261bd4323e284c1fb",
+                  "age": "45-54",
+                  "value": 1.5
+              },
+              {
+                  "_id": "67625b9261bd4323e284c1fc",
+                  "age": "55-64",
+                  "value": 0.3
+              },
+              {
+                  "_id": "67625b9261bd4323e284c1fd",
+                  "age": "65+",
+                  "value": 0.4
+              }
+          ],
+          "audienceByCity": [
+              {
+                  "category": "Mumbai",
+                  "value": 7.9
+              },
+              {
+                  "category": "Delhi",
+                  "value": 7.6
+              },
+              {
+                  "category": "Kolkata",
+                  "value": 3.4
+              },
+              {
+                  "category": "Ahemdabad",
+                  "value": 2.9
+              },
+              {
+                  "category": "Pune",
+                  "value": 2.7
+              }
+          ],
+          "bestTimeToPost": "6pm/9pm",
+          "audienceByCountry": []
       },
-      "avgLikes": 195957,
-      "avgComments": 1549,
-      "country": "india",
-      "countryCode": "IN",
-      "city": "delhi",
-      "type": "influencer",
-      "gender": "m",
-      "age": "21_24",
-      "categories": [],
-      "lastPosts": [
-          {
-              "url": "https://www.instagram.com/p/C-h9G0LNtol/",
-              "date": "2024-08-11T13:00:48.000Z",
-              "type": "carousel_album",
-              "image": "https://8cd4d13f-aa75-4a0c-abdb-0f388a983964.selstorage.ru/post_INST:17841400926008111_18015159542604897?time=1723542772",
-              "likes": 61401,
-              "comments": 530,
-              "text": "🔥"
+      "youtubeData": {
+          "collaborationCharges": {
+              "reel": 30000,
+              "story": 50000,
+              "post": 30000,
+              "oneMonthDigitalRights": 30000
           },
-          {
-              "url": "https://www.instagram.com/p/C94WF1NtEcH/",
-              "date": "2024-07-26T09:11:01.000Z",
-              "type": "photo",
-              "image": "https://8cd4d13f-aa75-4a0c-abdb-0f388a983964.selstorage.ru/post_INST:17841400926008111_18018412190378816?time=1723542773",
-              "likes": 773807,
-              "comments": 3118,
-              "text": "Mehnat 💪🔥"
-          },
-          {
-              "url": "https://www.instagram.com/p/C9tq4vfNpT8/",
-              "date": "2024-07-22T05:41:05.000Z",
-              "type": "carousel_album",
-              "image": "https://8cd4d13f-aa75-4a0c-abdb-0f388a983964.selstorage.ru/post_INST:17841400926008111_17944154396734478?time=1723542773",
-              "likes": 136029,
-              "comments": 606,
-              "text": "कुछ पल अपने लिए 😇❤️"
-          }
-      ],
-      "lastFromMentions": [],
-      "membersTypes": [
-          {
-              "name": "real",
-              "percent": 0.828125
-          },
-          {
-              "name": "influencer",
-              "percent": 0.109375
-          },
-          {
-              "name": "massfollowers",
-              "percent": 0.03125
-          },
-          {
-              "name": "suspicious",
-              "percent": 0.03125
-          }
-      ],
-      "membersReachability": [
-          {
-              "name": "r0_500",
-              "percent": 0.5079365079365079
-          },
-          {
-              "name": "r500_1000",
-              "percent": 0.19047619047619047
-          },
-          {
-              "name": "r1500_plus",
-              "percent": 0.19047619047619047
-          },
-          {
-              "name": "r1000_1500",
-              "percent": 0.1111111111111111
-          }
-      ],
-      "countries": [
-          {
-              "name": "india",
-              "percent": 0.9142857142857143
-          }
-      ],
-      "cities": [
-          {
-              "name": "jaipur",
-              "percent": 0.2
-          },
-          {
-              "name": "ludhiana",
-              "percent": 0.2
-          },
-          {
-              "name": "delhi",
-              "percent": 0.2
-          },
-          {
-              "name": "dehradun",
-              "percent": 0.2
-          },
-          {
-              "name": "mumbai",
-              "percent": 0.2
-          }
-      ],
-      "genders": [
-          {
-              "name": "m",
-              "percent": 0.8392857142857143
-          },
-          {
-              "name": "f",
-              "percent": 0.16071428571428573
-          }
-      ],
-      "ages": [
-          {
-              "name": "0_18",
-              "percent": 0.30357142857142855
-          },
-          {
-              "name": "18_21",
-              "percent": 0.23214285714285715
-          },
-          {
-              "name": "21_24",
-              "percent": 0.21428571428571427
-          },
-          {
-              "name": "30_35",
-              "percent": 0.10714285714285714
-          },
-          {
-              "name": "24_27",
-              "percent": 0.05357142857142857
-          },
-          {
-              "name": "27_30",
-              "percent": 0.05357142857142857
-          },
-          {
-              "name": "45_100",
-              "percent": 0.03571428571428571
-          },
-          {
-              "name": "35_45",
-              "percent": 0
-          }
-      ],
-      "interests": [],
-      "brandSafety": {
-          "ad": 0,
-          "not_marked_ad": 0,
-          "alcohol": 0,
-          "toxic": 0,
-          "religious": 0,
-          "negative": 0,
-          "offensive": 0,
-          "political": 0,
-          "crime": 0,
-          "adult": 0,
-          "pranks": 0,
-          "totalScore": 0
+          "followers": 0,
+          "link": "https://www.youtube.com/@AmishaSingh19/videos",
+          "genderDistribution": [
+              {
+                  "_id": "67625b9261bd4323e284c1fe",
+                  "gender": "MALE",
+                  "distribution": 72.7
+              },
+              {
+                  "_id": "67625b9261bd4323e284c1ff",
+                  "gender": "FEMALE",
+                  "distribution": 27.3
+              }
+          ],
+          "ageDistribution": [
+              {
+                  "_id": "67625b9261bd4323e284c200",
+                  "age": "13-17",
+                  "value": 5.2
+              },
+              {
+                  "_id": "67625b9261bd4323e284c201",
+                  "age": "18-24",
+                  "value": 53.8
+              },
+              {
+                  "_id": "67625b9261bd4323e284c202",
+                  "age": "35-44",
+                  "value": 9.6
+              },
+              {
+                  "_id": "67625b9261bd4323e284c203",
+                  "age": "45-54",
+                  "value": 3.9
+              },
+              {
+                  "_id": "67625b9261bd4323e284c204",
+                  "age": "55-64",
+                  "value": 0.9
+              },
+              {
+                  "_id": "67625b9261bd4323e284c205",
+                  "age": "65+",
+                  "value": 0.6
+              }
+          ],
+          "audienceByCountry": [
+              {
+                  "_id": "67625b9261bd4323e284c206",
+                  "category": "India",
+                  "value": 78.4
+              },
+              {
+                  "_id": "67625b9261bd4323e284c207",
+                  "category": "Pakistan",
+                  "value": 2.6
+              },
+              {
+                  "_id": "67625b9261bd4323e284c208",
+                  "category": "Bangladesh",
+                  "value": 0.8
+              },
+              {
+                  "_id": "67625b9261bd4323e284c209",
+                  "category": "Nepal",
+                  "value": 0.7
+              },
+              {
+                  "_id": "67625b9261bd4323e284c20a",
+                  "category": "Canada",
+                  "value": 0.5
+              },
+              {
+                  "_id": "67625b9261bd4323e284c20b",
+                  "category": "United States",
+                  "value": 0.4
+              },
+              {
+                  "_id": "67625b9261bd4323e284c20c",
+                  "category": "United Kingdom",
+                  "value": 0.3
+              },
+              {
+                  "_id": "67625b9261bd4323e284c20d",
+                  "category": "United Arab Emirates",
+                  "value": 0.2
+              },
+              {
+                  "_id": "67625b9261bd4323e284c20e",
+                  "category": "Saudi Arabia",
+                  "value": 0.1
+              },
+              {
+                  "_id": "67625b9261bd4323e284c20f",
+                  "category": "Australia",
+                  "value": 0.1
+              }
+          ]
       },
-      "pctUsersCount180d": 0.5174842077276257,
-      "contactEmail": "manojdeybusiness@gmail.com",
-      "pctFakeFollowers": 0.0625,
-      "audienceSeverity": 0.1191919191919192
+      "_id": "67624bfdf0009190c9dad63d",
+      "name": "Amisha Singh",
+      "user_name": "amishaasingh_",
+      "categoryInstagram": "Minni Vlogs",
+      "categoryYouTube": "Vlogs",
+      "city": "Delhi",
+      "state": "Delhi",
+      "language": "Hindi",
+      "gender": "Female",
+      "image": "https://instagram.fisb31-1.fna.fbcdn.net/v/t51.2885-19/458302403_1034123448348400_1109701171157543177_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_ht=instagram.fisb31-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=zjCexVydo50Q7kNvgGQZTKV&_nc_gid=8ac5d174ed7e4d04b7f98256c83091d7&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AYBM8c9aHS8uDqDH0-4tDpOLBI_GgXtwgt-NR1v_l-m4PA&oe=67681F47&_nc_sid=8b3546",
+      "userCount": 98127
   }
 }

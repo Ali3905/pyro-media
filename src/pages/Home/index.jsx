@@ -1,26 +1,46 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Sidebar } from '../../components/Sidebar'
 import Navbar from '../../components/Navbar'
 import ProfileCard from './ProfileCard'
-import Audience from './Audience'
-import ContentTypeDistribution from './ContentTypeDistribution'
-import AudienceAuthenticity from './AudienceAuthenticity'
-import CollaborationAndValue from './CollaborationAndValue'
-import TopPosts from './TopPosts'
-import ContentAnalysis from './ContentAnalysis'
+// import Audience from './Audience'
+// import ContentTypeDistribution from './ContentTypeDistribution'
+// import AudienceAuthenticity from './AudienceAuthenticity'
+// import CollaborationAndValue from './CollaborationAndValue'
+// import TopPosts from './TopPosts'
+// import ContentAnalysis from './ContentAnalysis'
 import useFetchInstagramStatistics from '../../hooks/fetchInstagramStatictics'
 import { creatorData } from '../../data/data'
 import About from './About'
 import AudienceNewDesign from './AudienceNewDesign'
 import CollaborationCharges from './CollaborationCharges'
+import { useParams } from 'react-router-dom'
+import axios from 'axios'
 
 const index = () => {
-  const [url, setUrl] = useState(null)
+  const { userName } = useParams()
+  const [url, setUrl] = useState(userName)
   const { data: creator, isLoading } = useFetchInstagramStatistics(creatorData.data, url)
 
   const onChange = (e) => {
     setUrl(e.target.value)
   }
+
+  const getInfluencerPublicDetails = async (userName) => {
+    try {
+      const res = await axios({
+        method: "get",
+        url: "https://i.instagram.com/api/v1/users/web_profile_info",
+        params: { username: userName }
+      })
+    } catch (error) {
+      alert("Could not fetch public data")
+    }
+  }
+
+  useEffect(() => {
+    console.log({ userName });
+
+  }, [userName])
 
   return (
     <div className='flex w-full'>
@@ -30,9 +50,9 @@ const index = () => {
         {!creator || creator === undefined ? <div className='text-center mt-[60px] text-[22px]'>Creator is not available</div> :
           !isLoading ? <div className='mt-[60px] flex flex-col gap-[40px]'>
             <ProfileCard creator={creator} />
-            <About />
-            <AudienceNewDesign />
-            <CollaborationCharges />
+            <About creator={creator} />
+            <AudienceNewDesign creator={creator} />
+            <CollaborationCharges data={creator?.instagramData.collaborationCharges} />
             {/* <ContentTypeDistribution />
             <Audience creator={creator} />
             <AudienceAuthenticity creator={creator} />

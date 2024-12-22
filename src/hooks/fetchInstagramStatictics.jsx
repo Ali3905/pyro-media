@@ -1,23 +1,19 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function useFetchInstagramStatistics(initialData, url) {
+export default function useFetchInstagramStatistics(initialData, userName) {
     const [data, setData] = useState(initialData)
     const [isLoading, setIsLoading] = useState(false)
 
-    const fetchData = async (url) => {
+    const fetchData = async (userName) => {
         setIsLoading(true)
         try {
             const res = await axios({
                 method: "get",
-                url: "https://instagram-statistics-api.p.rapidapi.com/community",
+                url: "http://localhost:8000/details",
                 params: {
-                    url
+                    userName
                 },
-                headers: {
-                    "x-rapidapi-key": import.meta.env.VITE_RAPID_API_KEY,
-                    "x-rapidapi-host": import.meta.env.VITE_RAPID_API_HOST
-                }
             })
             setData(res.data.data)
         } catch (error) {
@@ -28,12 +24,14 @@ export default function useFetchInstagramStatistics(initialData, url) {
     }
 
     useEffect(() => {
-        if (url && (url.startsWith("https://instagram") || url.startsWith("https://www.instagram"))) {
-            fetchData(url)
-            console.log("running");
-        }
+        // if (url && (url.startsWith("https://instagram") || url.startsWith("https://www.instagram"))) {
+        //     fetchData(url)
+        //     console.log("running");
+        // }
+
+        fetchData(userName)
         
-    }, [url])
+    }, [userName])
 
     return { data, isLoading }
 }

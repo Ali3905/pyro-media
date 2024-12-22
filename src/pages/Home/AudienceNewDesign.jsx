@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Card, Heading } from './ContentTypeDistribution';
 import { ageDistributionData, creatorData } from '../../data/data';
 
-const AudienceNewDesign = () => {
+const AudienceNewDesign = ({ creator }) => {
     const [active, setActive] = useState("all")
     return (
         <>
@@ -14,20 +14,20 @@ const AudienceNewDesign = () => {
             <h1 className='font-bold text-[32px] text-[color:var(--dark-green)]'>Audience</h1>
             <div className='bg-white  p-[20px] rounded-xl'>
                 {/* <div className='flex flex-col gap-[50px]'> */}
-                    <div className='flex flex-col sm:flex-row gap-2 justify-center'>
-                        {
-                            (active === "all" || active === "instagram") && <div className='flex flex-col gap-[50px]'>
-                                <GenderDistribution title={active !== "all" ? "Gender Distibution" : "Instagram Gender Distibution"} />
-                                <AgeDistribution data={ageDistributionData} title={active !== "all" ? "Age Distibution" : "Instagram Age Distibution"} />
-                                <AudienceByCountry data={creatorData.data.membersCountries} title={active !== "all" ? "Top Cities" : "Instagram Top Cities"} />
-                            </div>
-                        }
-                        {(active === "all" || active === "youtube") && <div className='flex flex-col gap-[50px]'>
-                            <GenderDistribution title={active !== "all" ? "Gender Distibution" : "Youtube Gender Distibution"} />
-                            <AgeDistribution data={ageDistributionData} title={active !== "all" ? "Age Distibution" : "Youtube Age Distibution"} />
-                            <AudienceByCountry data={creatorData.data.membersCountries} title={active !== "all" ? "Top Cities" : "Youtube Top Cities"} />
-                        </div>}
-                    </div>
+                <div className='flex flex-col sm:flex-row gap-2 justify-center'>
+                    {
+                        (active === "all" || active === "instagram") && <div className='flex flex-col gap-[50px]'>
+                            <GenderDistribution data={creator.instagramData.genderDistribution} title={active !== "all" ? "Gender Distibution" : "Instagram Gender Distibution"} />
+                            <AgeDistribution data={creator.instagramData.ageDistribution} title={active !== "all" ? "Age Distibution" : "Instagram Age Distibution"} />
+                            <AudienceByCountry data={creator.instagramData.audienceByCountry} title={active !== "all" ? "Top Cities" : "Instagram Top Cities"} />
+                        </div>
+                    }
+                    {(active === "all" || active === "youtube") && <div className='flex flex-col gap-[50px]'>
+                        <GenderDistribution data={creator.youtubeData.genderDistribution} title={active !== "all" ? "Gender Distibution" : "Youtube Gender Distibution"} />
+                        <AgeDistribution data={creator.youtubeData.ageDistribution} title={active !== "all" ? "Age Distibution" : "Youtube Age Distibution"} />
+                        <AudienceByCountry data={creator.youtubeData.audienceByCountry} title={active !== "all" ? "Top Countries" : "Youtube Top Countries"} />
+                    </div>}
+                </div>
                 {/* </div> */}
             </div>
         </>
@@ -36,13 +36,16 @@ const AudienceNewDesign = () => {
 
 export default AudienceNewDesign
 
-function GenderDistribution({ title }) {
+function GenderDistribution({ title, data }) {
     return (
         <div className=''>
             <Heading text={title} />
             <span className='flex gap-[20px] justify-center'>
-                <Card title={"Men"} data={"64"} />
-                <Card title={"Women"} data={"36"} />
+                {
+                    data?.map((ele)=>{
+                        return <Card title={ele.gender} data={ele.distribution} />
+                    })
+                }
             </span>
         </div>
     )
@@ -60,7 +63,7 @@ export function AudienceByCountry({ data, title }) {
                         <p>Progress</p>
                     </div>
                     {
-                        data.map((ele) => {
+                        data?.map((ele) => {
                             return <div className='flex'>
                                 <p className='w-[100px] capitalize'>{ele.category}</p>
                                 <span className='bg-[color:var(--light-grey)] w-[200px] relative h-[10px] rounded-md overflow-hidden'>
@@ -82,7 +85,7 @@ export function AgeDistribution({ data, title }) {
             <div className=' flex flex-col items-center'>
                 <div className=' flex flex-col gap-[20px] '>
                     {
-                        data.map((ele) => {
+                        data?.map((ele) => {
                             return <div className='flex items-center gap-2' key={ele.age}>
                                 <p className=' capitalize'>{ele.age}</p>
                                 <span className='bg-[color:var(--light-grey)] w-[200px] relative h-[20px] rounded-2xl '>

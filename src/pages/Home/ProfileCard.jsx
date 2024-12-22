@@ -1,30 +1,37 @@
 import { Heart } from 'lucide-react'
 import React from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+// import { useNavigate, Link } from 'react-router-dom'
 
 const ProfileCard = ({ creator }) => {
     // const navigate = useNavigate()
+    console.log({ creator });
+
     return (
         <div>
             <div className='flex justify-between items-start'>
                 {/* <div className='flex flex-col gap-[20px]'> */}
-                <img src={creator?.image} alt="profile" height={150} width={150} className='rounded-full border-4 border-white sm:w-[150px] w-[100px] aspect-square' />
-                {/* <p className='bg-[color:var(--green)] px-[10px] py-[5px] font-bold text-[20px] text-[color:var(--sea-green)] cursor-pointer rounded-md'>{(creator?.qualityScore * 100).toFixed(0)} - Excellent</p> */}
+                <img
+                    src="https://instagram.fisb31-1.fna.fbcdn.net/v/t51.2885-19/458302403_1034123448348400_1109701171157543177_n.jpg?..."
+                    alt="profile"
+                    height={150}
+                    width={150}
+                    className='rounded-full border-4 border-white sm:w-[150px] w-[100px] aspect-square'
+                />                {/* <p className='bg-[color:var(--green)] px-[10px] py-[5px] font-bold text-[20px] text-[color:var(--sea-green)] cursor-pointer rounded-md'>{(creator?.qualityScore * 100).toFixed(0)} - Excellent</p> */}
                 {/* </div> */}
                 <div className=''>
                     <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{creator?.name || "Not available"}</p>
-                    <p>Skin care - Food - Travel</p>
+                    <p>{creator.categoryInstagram} - {creator.categoryYouTube}</p>
                     <span className='sm:flex gap-[60px] mt-[30px] hidden'>
                         <span>
-                            <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{new Intl.NumberFormat("en-US", { notation: 'compact', compactDisplay: 'short' }).format(creator?.usersCount)}</p>
+                            <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{new Intl.NumberFormat("en-US", { notation: 'compact', compactDisplay: 'short' }).format(creator?.userCount)}</p>
                             <p>Followers</p>
                         </span>
                         <span>
-                            <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{new Intl.NumberFormat("en-US", { notation: 'compact', compactDisplay: 'short' }).format(creator?.avgLikes)}</p>
+                            <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{new Intl.NumberFormat("en-US", { notation: 'compact', compactDisplay: 'short' }).format(creator?.avgLikes || 0)}</p>
                             <p>Average Likes</p>
                         </span>
                         <span>
-                            <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{(creator.avgER * 100).toFixed(2)}</p>
+                            <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{((creator.avgER || 0) * 100).toFixed(2)}</p>
                             <p>Engagement Rate</p>
                         </span>
                     </span>
@@ -36,15 +43,15 @@ const ProfileCard = ({ creator }) => {
             </div>
             <span className='flex gap-[60px] mt-[30px] sm:hidden'>
                 <span>
-                    <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{new Intl.NumberFormat("en-US", { notation: 'compact', compactDisplay: 'short' }).format(creator?.usersCount)}</p>
+                    <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{new Intl.NumberFormat("en-US", { notation: 'compact', compactDisplay: 'short' }).format(creator?.userCount)}</p>
                     <p>Followers</p>
                 </span>
                 <span>
-                    <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{new Intl.NumberFormat("en-US", { notation: 'compact', compactDisplay: 'short' }).format(creator?.avgLikes)}</p>
+                    <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{new Intl.NumberFormat("en-US", { notation: 'compact', compactDisplay: 'short' }).format(creator?.avgLikes || 0)}</p>
                     <p>Average Likes</p>
                 </span>
                 <span>
-                    <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{(creator.avgER * 100).toFixed(2)}</p>
+                    <p className='font-bold text-[20px] text-[color:var(--dark-green)]'>{((creator.avgER || 0) * 100).toFixed(2)}</p>
                     <p>Engagement Rate</p>
                 </span>
             </span>

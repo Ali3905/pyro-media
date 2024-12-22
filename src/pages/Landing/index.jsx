@@ -1,15 +1,62 @@
 import { MoveRight } from 'lucide-react'
-import React from 'react'
+import React, { useState } from 'react'
 import Plans from './Plans'
+import WhyPhyo from './WhyPhyo'
+import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
+import Feature from './Feature'
+import Faq from './Faq'
+import Testimonials from './Testimonials'
+import Hero from './Hero'
+import How from './How'
+import { InfluencersList } from './Search'
+import axios from 'axios'
+
 
 const index = () => {
+    const [influencers, setInfluencers] = useState([])
+    const [fetchingState, setFetchingState] = useState("idle")
+
+    const getInfluencers = async (prompt) => {
+        setFetchingState("loading")
+        try {
+            const res = await axios({
+                method: "post",
+                baseURL: "http://localhost:8000",
+                url: "/api/ask",
+                data: {
+                    prompt
+                }
+            })
+            if (res.data.data.length < 1) {
+                setFetchingState("notFound")
+            } else {
+                setInfluencers(res.data.data)
+                setFetchingState("success")
+            }
+
+        } catch (error) {
+            alert("Could not fetch the influencers")
+            setFetchingState("error")
+            console.log(error);
+        }
+    }
     return (
-        <div className='bg-black'>
-            <div className='max-w-[1200px] mx-auto pt-[130px] relative z-10'>
-                <Header />
-                <Cards />
+        <div className=''>
+            <div className='max-w-[1400px] mx-auto pt-[52px] relative z-10'>
+                <Navbar />
+                {/* <Header /> */}
+                <Hero  handleSubmit={getInfluencers} fetchingState={fetchingState} />
+                <InfluencersList influencers={influencers} fetchingState={fetchingState} />
+                <Feature />
+                <WhyPhyo />
+                <How />
+                {/* <Cards /> */}
+                <Faq />
                 <Plans />
-                <div className='h-[200px] bg-black'></div>
+                <Testimonials />
+                <Footer />
+                {/* <div className='h-[200px] bg-black'></div> */}
             </div>
 
             <div className='h-[400px] w-[300px] rounded-full bg-[color:var(--green)] blur-[180px] shadow-2xl absolute -right-[100px] top-[20vh]'></div>
